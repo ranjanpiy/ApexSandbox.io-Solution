@@ -1,0 +1,11 @@
+public Boolean isPassed(Boolean passedExam, Boolean passedAssignments, Boolean passedProject) {
+    Boolean result;
+    if (( passedExam == true && passedAssignments == true)||( passedAssignments== true && passedProject ==true)
+      || (passedExam == true && passedProject == true))
+      result = true;
+
+      else
+      result= false;
+
+    return result;
+}
