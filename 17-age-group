@@ -2,6 +2,8 @@ public String ageGroup(Integer n) {
     String age;
     if(n <= 1)
     { age= 'Infant';}
+    else if ( n <= 14 && n > 1)
+    { age= 'Child';}
 
     return age;
 }
