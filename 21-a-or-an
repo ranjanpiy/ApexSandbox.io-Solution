@@ -1,0 +1,12 @@
+public String aOrAn(String word) {
+    String prependWord;
+    String upperCaseWord = word.toUpper();
+    if(upperCaseWord.startsWith('A') || upperCaseWord.startsWith('E') || upperCaseWord.startsWith('I') ||
+    upperCaseWord.startsWith('O') ||upperCaseWord.startsWith('U') )
+    {
+        prependWord = 'an '+ word;
+    }
+     else
+        {prependWord = 'a '+ word;}
+    return prependWord;
+}
