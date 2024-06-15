@@ -3,14 +3,17 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     if(a+b ==c)
     {intSum ='c';
     
-        else if (a+c ==b)
-        {intSum ='b';
+    if (a+c ==b)
+    {intSum ='b';
 
-            else if (b+c ==a)
-            {intSum ='a'
+    if (b+c ==a)
+    {intSum ='a';}}}
+    
+
 
     else
-    {intSum ='';}}}}
+    {intSum ='';}
+
 
     return intSum;
 }
