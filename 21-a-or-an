@@ -1,6 +1,6 @@
 public String aOrAn(String word) {
     String prependWord;
-    String upperCaseWord = word.toUpper();
+    String upperCaseWord = word.toUpperCase();
     if(upperCaseWord.startsWith('A') || upperCaseWord.startsWith('E') || upperCaseWord.startsWith('I') ||
     upperCaseWord.startsWith('O') ||upperCaseWord.startsWith('U') )
     {
