@@ -8,11 +8,11 @@ public String whichTwo(Integer a, Integer b, Integer c) {
                 else if (c == b + c)
                 {
                     intSum='c';
+                        else
+                         intSum ='';
                 }
         }
     }
-    else
-    intSum ='';
 
     return intSum;
 }
