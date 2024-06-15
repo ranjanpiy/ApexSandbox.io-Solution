@@ -1,5 +1,5 @@
 public Integer fibonacci(Integer n) {
-    Integer total =0, nOne=1,nTwo=1;
+    Integer total =1, nOne=1,nTwo=1;
     if( n==1 || n==2)
     return total;
     else{
