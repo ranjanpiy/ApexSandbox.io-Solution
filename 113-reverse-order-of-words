@@ -1,6 +1,6 @@
 public String reverseWordsInASentence(String sentence){
-    String sentenceTrim = sentence.trim(); //trims the begining and ending whitespaces.
-    Integer countMatches = sentenceTrim.countMatches(' ')+1; //counts the whitespaces in the string.
-    String sentenceReverse = sentenceTrim.reverse();
+    //String sentenceTrim = sentence.trim(); //trims the begining and ending whitespaces.
+    //Integer countMatches = sentenceTrim.countMatches(' ')+1; //counts the whitespaces in the string.
+    String sentenceReverse = sentence.reverse();
     return sentenceReverse;
 }
