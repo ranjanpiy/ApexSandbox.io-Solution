@@ -1,19 +1,18 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     String intSum;
-    if(a+b ==c)
-    {intSum ='c';
-    
-    if (a+c ==b)
-    {intSum ='b';
-
-    if (b+c ==a)
-    {intSum ='a';}}}
-    
-
-
+    if(a == b + c)
+    {intSum ='a';
+        else if (b == a + c)
+        {
+            intSum ='b';
+                else if (c == b + c)
+                {
+                    intSum='c';
+                }
+        }
+    }
     else
-    {intSum ='';}
-
+    intSum ='';
 
     return intSum;
 }
