@@ -1,16 +1,16 @@
 public String whichTwo(Integer a, Integer b, Integer c) {
     String intSum;
     if(a+b ==c)
-    intSum ='c';
+    {intSum ='c';
     
-    else if (a+c ==b)
-    intSum ='b';
+        else if (a+c ==b)
+        {intSum ='b';
 
-    else if (b+c ==a)
-    intSum ='a'
+            else if (b+c ==a)
+            {intSum ='a'
 
     else
-    intSum ='';
+    intSum =''; }}}
 
     return intSum;
 }
