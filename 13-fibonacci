@@ -1,10 +1,10 @@
 public Integer fibonacci(Integer n) {
-    Integer total =0;
+    Integer total =1;
     Integer nOne=1;
     Integer nTwo=1;
-    if( n==1 || n==2)
-    return 1;
-    else{
+    /*if( n==1 || n==2)
+    return 1
+    else{*/
     for ( Integer i=3;i<=n;i++)
     { 
         total = nOne + nTwo;
