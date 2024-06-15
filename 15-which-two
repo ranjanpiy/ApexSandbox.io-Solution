@@ -10,7 +10,7 @@ public String whichTwo(Integer a, Integer b, Integer c) {
             {intSum ='a'
 
     else
-    intSum =''; }}}
+    {intSum ='';}}}}
 
     return intSum;
 }
