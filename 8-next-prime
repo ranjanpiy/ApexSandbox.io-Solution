@@ -1,5 +1,5 @@
 public Integer nextPrime(Integer num) {
-    if( num<2)
+    /*if( num<2)
      return 2;
      Integer n = num+1;
     while (!isPrime(n) )
@@ -7,7 +7,6 @@ public Integer nextPrime(Integer num) {
         n+=1;
     }
     return n;
-    
 }
 public Boolean isPrime(Integer n) {
     Boolean result;
@@ -22,4 +21,25 @@ public Boolean isPrime(Integer n) {
     }
     return result;
     
+}*/
+
+
+if (num < 2) return 2;
+
+num++;
+
+for (Integer i = 2; i<num; i++ ) {
+
+if ( Math.mod(num,i) == 0 ) {
+
+    num++;
+
+    i = 2;
+
+}
+
+}
+
+return num;
+
 }
