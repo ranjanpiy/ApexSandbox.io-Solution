@@ -1,10 +1,10 @@
 public Boolean sumEquals(Integer a, Integer b, Integer c) {
-    Boolean r;
+    Boolean result;
     if( (a+b) == c)
-    r = true;
+    result = true;
 
     else
-    r= false;
+    result= false;
 
-    return r;
+    return result;
 }
