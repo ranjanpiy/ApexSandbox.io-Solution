@@ -1,5 +1,5 @@
 public Integer fibonacci(Integer n) {
-    Integer total =0;
+    Integer total =1;
     for ( Integer i=1;i<=n;i++)
     { total +=  i;}
     return total;
