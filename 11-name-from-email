@@ -1,5 +1,5 @@
 public String nameFromEmail(String email) {
-    String firstName =email.substringBefore('.'));
+    String firstName =email.substringBefore('.');
     String lastName =emai.substringBetween('.', '@');
     String lName = lastName.capitalize();
     String fName = firstName.capitalize();
