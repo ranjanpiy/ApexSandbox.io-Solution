@@ -4,6 +4,9 @@ public String ageGroup(Integer n) {
     { age= 'Infant';}
     else if ( n <= 14 && n > 1)
     { age= 'Child';}
-
+    else if ( n <= 21 && n > 14)
+    { age= 'Youth';}
+    else if (  n > 21)
+    { age= 'Adult';}
     return age;
 }
