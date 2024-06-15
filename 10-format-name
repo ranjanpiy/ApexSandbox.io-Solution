@@ -1,12 +1,12 @@
 public String formatName(String firstName, String lastName) {
-    String Name= lastName +', '+firstName;
-    /*if( firstName.IsBlank() && lastName.IsBlank())
+    String Name;
+    if( String.IsBlank(firstName) && String.IsBlank(lastName))
     {Name='';}
-    else if( firstName.IsBlank() || lastName.IsBlank())
+    else if( String.IsBlank(firstName) || String.IsBlank(lastName))
     {Name=lastName + firstName;}
     else
     {
         Name= lastName +', '+firstName;
-    }*/
+    }
     return Name;
 }
