@@ -1,9 +1,10 @@
 public Boolean companionPlants(String plant1, String plant2) {
    List <String> Plants = new List<String>{plant1,plant2};
    Plants.sort();
-    if((Plants[0] =='lettuce') && (Plants[1] =='cucumbers' || Plants[1] =='onions'))
-    {return true;}
-    else if ((Plants[0] =='onions') && (Plants[1] =='carrots' || Plants[1] =='tomatoes'))
+    if((Plants[0] =='cucumbers' && Plants[1] =='lettuce' )||
+     (Plants[0] =='lettuce' && Plants[1] =='onions' ) || 
+     (Plants[0] =='carrots' && Plants[1] =='onions' ) ||
+     (Plants[1] =='tomatoes' && Plants[0] =='onions' ))
     {return true;}
     else
     {return false;}
