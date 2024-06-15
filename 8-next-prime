@@ -3,7 +3,7 @@ public Integer nextPrime(Integer num) {
     {
         for( Integer i =2;i<num;i++)
         {
-        if(math.mod(num,1)==0)
+        if(math.mod(num,i)==0)
         break;
         }
         break;
