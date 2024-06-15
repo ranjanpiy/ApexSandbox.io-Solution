@@ -1,6 +1,6 @@
 public Boolean companionPlants(String plant1, String plant2) {
    List <String> Plants = new List<String>{plant1,plant2};
-   Plnats = Plants.sort();
+   Plants = Plants.sort();
     if((Plants[0] =='lettuce') && (Plants[1] =='cucumbers' || Plants[1] =='onions'))
     {return true;}
     else if ((Plants[0] =='onions') && (Plants[1] =='carrots' || Plants[1] =='tomatoes'))
