@@ -11,6 +11,6 @@ public String reverseWordsInASentence(String sentence){
     {
         reverseList.add(sentenceList[i]);
     }
-    String sentenceWordsReverse = String.join(reverseList,'');
+    String sentenceWordsReverse = String.join(reverseList,' ');
     return sentenceWordsReverse;
 }
