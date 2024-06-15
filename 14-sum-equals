@@ -1,11 +1,11 @@
 public Boolean sumEquals(Integer a, Integer b, Integer c) {
-    Boolean result;
+    Boolean result1;
     Integer d = a + b;
     if( d == c)
-    {result = true;}
+    {result1 = true;}
 
     else
-    result = false;
+    result1 = false;
 
-    retun result;
+    retun result1;
 }
