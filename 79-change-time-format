@@ -1,19 +1,19 @@
 public String changeTimeFormat(String strTime) {
-    String hour =strTime.substringBefore(':');
-    String minute =strTime.substringAfter(':');
+    Integer hour =Integer.valueOf(strTime.substringBefore(':'));
+    Integer minute =Integer.valueOf(strTime.substringAfter(':'));
     String strAMPM;
-    if(hour >'12')
+    if(hour >12)
     {
         strAMPM= 'PM';
-        hour = hour -'12';
+        hour = hour -12;
     }
 
     else
     {
         strAMPM ='AM';
         
-        if(hour< '01')
-        {hour ='12';}
+        if(hour< 1)
+        {hour =12;}
     }
     return hour +':'+ minute +' '+ strAMPM;
 }
