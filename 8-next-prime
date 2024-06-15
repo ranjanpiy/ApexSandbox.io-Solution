@@ -1,12 +1,13 @@
 public Integer nextPrime(Integer num) {
+    Integer n;
     for( num++;;num++)
     {
-        for( Integer i =2;i<num;i++)
+        for( Integer i =2;i<n;i++)
         {
-        if(math.mod(num,i)==0)
+        if(math.mod(n,i)==0)
         break;
         }
         break;
     }
-    return num;
+    return n;
 }
