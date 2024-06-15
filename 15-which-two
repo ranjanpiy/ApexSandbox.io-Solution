@@ -4,7 +4,7 @@ public String whichTwo(Integer a, Integer b, Integer c) {
     {intSum ='a';}
     else if (b == a + c)
         {intSum ='b';}
-    else if (c == b + c)
+    else if (c == b + a)
         {intSum='c';}
     else
         {intSum ='';}
