@@ -15,5 +15,5 @@ public String changeTimeFormat(String strTime) {
         if(hour< 1)
         {hour =12;}
     }
-    return hour +':'+ minute +' '+ strAMPM;
+    return String.valueOf(hour) +':'+ String.valueOf(minute) +' '+ strAMPM;
 }
