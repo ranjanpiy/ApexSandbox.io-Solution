@@ -7,7 +7,7 @@ public String reverseWordsInASentence(String sentence){
     List<String> sentenceList = sentence.split(' ');
     List<String> reverseList = new List<String>();
 
-    for(Integer i=sentenceList.size();i<=1;i--)
+    for(Integer i=countMatches;i<=1;i--)
     {
         reverseList.add(sentenceList.get(i));
     }
