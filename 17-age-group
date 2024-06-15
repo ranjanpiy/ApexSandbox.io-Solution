@@ -6,7 +6,8 @@ public String ageGroup(Integer n) {
     { age = 'Child';}
     else if ( 15<=n && <=21)
     {age = 'Youth';}
-    else{ age = 'Adult';}
+    else
+    age = 'Adult';
 
     return age;
 }
