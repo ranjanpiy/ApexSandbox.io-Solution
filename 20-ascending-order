@@ -1,0 +1,10 @@
+public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
+    Boolean result;
+    if((a == b OR a<b) AND b<c)
+    result = true;
+
+    else
+    result= false;
+
+    return result;
+}
