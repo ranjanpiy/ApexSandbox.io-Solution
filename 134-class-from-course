@@ -6,8 +6,8 @@ public Id classFromCourse(String courseName) {
    { return null;}
     else{
     newClass.apxio__Course__c =getCourse[0].Id;
-    newClass.Name= getCourse[0].Name;
+    newClass.Name= getCourse[0].courseName;
     insert newClass;
-    return newClass.id;
+    return newClass.Id;
     }
 }
