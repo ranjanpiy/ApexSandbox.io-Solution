@@ -1,4 +1,4 @@
 public String divide(Integer a, Integer b){
     Integer result = a/b;
-    return (String) result;
+    return String.valueOf(result);
 }
