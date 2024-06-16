@@ -3,7 +3,7 @@ public Id classFromCourse(String courseName) {
      List<apxio__Course__c> getCourse = [SELECT Id,Name FROM apxio__Course__c
                                           WHERE apxio__Course__c.Name =:courseName];
     if(getCourse.size() == null)
-    return null;
+   { return null;}
     else{
     newClass.apxio__Course__c =getCourse[0].Id;
     newClass.Name= getCourse[0].Name;
