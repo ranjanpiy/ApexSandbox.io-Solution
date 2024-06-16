@@ -9,7 +9,7 @@ public List<Account> checkAccounts(List<Account> accounts)
         if(count == accounts.size())
         return accounts;
          else
-         return AccountException;
+        throw AccountException;
     } catch (Exception e)
    {return e.getMessage();}
 }
