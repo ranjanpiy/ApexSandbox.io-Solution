@@ -4,5 +4,6 @@ public String registerStudent(String name, String phone, String email) {
     newStudent.apxio__Email__c = email;
     newStudent.apxio__Phone__c = phone;
     insert newStudent;
-    return newStudent.apxio__Registration_Number__c;
+    return newStudent.apxio__Registration_Number__c = [ SELECT apxio__Registration_Number__c
+     from apxio__Student__c where Id=newStudent.Id];
 }
