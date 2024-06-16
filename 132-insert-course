@@ -1,5 +1,5 @@
 public Id insertCourse(String name, String details, Integer credits) {
-    apxio__Course__c newCourse = new apxio__Course__c;
+    apxio__Course__c newCourse = new apxio__Course__c();
     newCourse.Name = name;
     newCourse.apxio__Course_Details__c = details;
     if(credits>=1 && credits<=4)
@@ -8,5 +8,5 @@ public Id insertCourse(String name, String details, Integer credits) {
     return newCourse.Id;}
 
     else
-    return null;
+    {return null;}
 }
