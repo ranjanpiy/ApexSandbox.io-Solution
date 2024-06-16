@@ -1,0 +1,18 @@
+public List<Account> checkAccounts(List<Account> accounts)
+{ Integer count =0;
+    try{
+        for (Account a : accounts)
+        {
+            if( a.BillingCity !=null)
+            count++;
+        }
+        if(count == accounts.size())
+        return accounts;
+         else
+         return AccountException;
+    } catch (Exception e)
+   {return e.getMessage();}
+}
+
+//do not remove the following custom-defined exception
+public class AccountException extends Exception {}
