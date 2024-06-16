@@ -6,7 +6,7 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
    // {
        // newStudent.Name = studentNames[i];
         //newStudent.apxio__Email__c =studentEmails [i];
-        newStudentList.addall(studentNames,studentEmails);
+        newStudentList.addAll(studentNames,studentEmails);
    // }
     insert newStudentList;
 }
