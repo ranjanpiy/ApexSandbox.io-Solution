@@ -6,7 +6,7 @@ public void enrollStudents(List<String> emails, String className) {
                                         WHERE apxio__Student__c.apxio__Email__c IN :emails];
     for(Integer i=0;i<emails.size();i++)
     { apxio__Class_Enrollment__c classEnroll = new apxio__Class_Enrollment__c();
-        classEnroll.apxio__Student__c= studentList.Id[i];
+        classEnroll.apxio__Student__c= studentList[i].Id;
         classEnroll.apxio__Offered_Class__c =classDetails.Id;
         newClassEnrollList.add(classEnroll);
     }
