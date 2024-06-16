@@ -4,9 +4,9 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     List<apxio__Student__c> newStudentList = new List <apxio__Student__c>();
     for (Integer i=0;i<size;i++)
     {
-        newStudent.Name = studentNames[i];
-        newStudent.apxio__Email__c =studentEmails [i];
-        newStudentList.add(newStudent);
+       // newStudent.Name = studentNames[i];
+       // newStudent.apxio__Email__c =studentEmails [i];
+        newStudentList.add(studentNames,studentEmails);
     }
     insert newStudentList;
 }
