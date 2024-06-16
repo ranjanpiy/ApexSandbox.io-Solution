@@ -1,7 +1,7 @@
 public Id classFromCourse(String courseName) {
      apxio__Class__c newClass = new apxio__Class__c();
      apxio__Course__c getCourse = SELECT Id,Name FROM apxio__Course__c
-                                          WHERE Name =courseName;
+                                          WHERE Name ='courseName';
     if(getCourse == null)
     return null;
     else{
