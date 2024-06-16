@@ -2,10 +2,10 @@ public void insertStudents(List<String> studentNames, List<String> studentEmails
     Integer size = studentNames.size();
     List<apxio__Student__c> newStudentList = new List <apxio__Student__c>();
     for (Integer i=0;i<size;i++)
-    { apxio__Student__c newStudent = new apxio__Student__c ();
+    { apxio__Student__c newStudent = new apxio__Student__c ();//If used outside the loop it will only create one record
         newStudent.Name = studentNames[i];
         newStudent.apxio__Email__c = studentEmails[i];
-        newStudentList.add(newStudent);
+        newStudentList.add(newStudent);//each individual record is added to list record
     }
-    insert newStudentList;
+    insert newStudentList;//all list records are inserted
 }
