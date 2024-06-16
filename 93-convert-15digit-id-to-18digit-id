@@ -3,7 +3,7 @@ public String convert15to18DigitId(String fifteenDigit)
     Integer lengthofGivenId = fifteenDigit.length();
     if( lengthofGivenId < 15 )
     return '-1';
-    else if (fifteenDigit == null)
+    else if (String.isblank(fifteenDigit) == true)
     return null;
     else
     {
