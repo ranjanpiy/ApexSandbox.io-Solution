@@ -4,6 +4,9 @@ public String registerStudent(String name, String phone, String email) {
     newStudent.apxio__Email__c = email;
     newStudent.apxio__Phone__c = phone;
     insert newStudent;
+    // When records are inserted, the Id is available immediately available on the record, but 
+    // other fields that were changed or populated as a result of the insert are not.
+    // So bind variable (:) is used below
     Id newStudentId = newStudent.Id;
     apxio__Student__c insertedStudent = [ SELECT apxio__Registration_Number__c
      from apxio__Student__c where apxio__Student__c.Id= :newStudentId ];
