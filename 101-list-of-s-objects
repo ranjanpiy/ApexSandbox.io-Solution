@@ -2,10 +2,9 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {   List<sObject> records= new List<sObject>();
     if(accounts == null && contacts == null)
     return records;
-    else if(accounts.size()>0)
-    records.addAll(accounts);
-    else if(contacts.size()>0)
-    records.addAll(contacts);
+    records.addAll(accounts?.accounts);
+    records.addAll(contacts?.contacts);
     
+
     return records;
 }
