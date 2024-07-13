@@ -3,7 +3,7 @@ public List<Account> getAccountsFromJSONString(String inputJSON){
    return null;
     else {
     List<Account> acctList = new List<Account>();
-    acctList = (List<Account>) JSON.deserialize(inputJSON,List<Account>.class);
+    acctList = (List<Account>) JSON.deserialize(inputJSON,List<Account>.class); //casting to List<Account> and return type in deserialize to same
     return acctList;
     }
 }
