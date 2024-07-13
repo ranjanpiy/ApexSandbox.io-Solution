@@ -2,8 +2,8 @@ public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> cont
 {   List<sObject> records= new List<sObject>();
     if(accounts == null && contacts == null)
     return records;
-    records.addAll(accounts?.accounts);
-    records.addAll(contacts?.contacts);
+    records.addAll(accounts)?.;
+    records.addAll(contacts)?.;
     
 
     return records;
