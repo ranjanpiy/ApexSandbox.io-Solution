@@ -1,8 +1,8 @@
 public void validateInsert(List<Opportunity> opportunities){
     
     for( Integer i=0; i<opportunities.size();i++)
-    {
-        if(opportunities[i].StageName =='Closed Won' && isBlank(opportunities[i].Description))
+    {   
+        if(opportunities[i].StageName =='Closed Won' && String.isBlank(opportunities[i].Description))
         opportunities[i].addError('Description should not be empty for Closed Won opportunity.');
     }
 }
