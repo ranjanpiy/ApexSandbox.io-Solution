@@ -1,9 +1,13 @@
 public List<sObject> getListOfsObject(List<Account> accounts, List<Contact> contacts)
 {   List<sObject> records= new List<sObject>();
-    if(accounts == null && contacts == null)
-    return records;
+    if(accounts != null )
+    { records.addAll(accounts);
+      if(contacts !=null)
+      {records.addAll(contacts);}}
     
-    records.addAll(accounts);
-    records.addAll(contacts);
+    else if (contacts !=null && accounts == null)
+    {
+    records.addAll(contacts);}
+
     return records;
 }
