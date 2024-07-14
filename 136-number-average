@@ -1,7 +1,6 @@
 public Decimal average(List<Decimal> numbers){
     Integer size =numbers.size();
     Decimal Sum=0;
-    //if(size > 0){
     for ( Decimal n:numbers)
     Sum = Sum + n;
     Decimal avg = (Sum/size).setScale(2);
