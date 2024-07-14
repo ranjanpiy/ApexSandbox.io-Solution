@@ -8,4 +8,5 @@ public static Integer findLargest(List<Integer> nums) {
         nLarge=math.max(nums[i],nLarge);
    // }
     return nLarge;
+     // nums.sort(); return nums[nums.size()-1];
 }
