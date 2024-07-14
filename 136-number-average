@@ -4,7 +4,7 @@ public Decimal average(List<Decimal> numbers){
     //if(size > 0){
     for ( Decimal n:numbers)
     Sum = Sum + n;
-    Decimal avg = Sum/size;
-    Decimal avgscale = avg.setScale(2);
-    return avgscale;
+    Decimal avg = (Sum/size).setScale(2);
+  //  Decimal avgscale = avg.setScale(2);
+    return avg;
 }
