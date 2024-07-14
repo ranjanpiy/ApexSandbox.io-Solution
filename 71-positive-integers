@@ -2,7 +2,7 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
     for (Integer i=0;i< numbers.size();i++)
     {
         if(numbers[i]<0)
-        numbers.remove(i)
+        numbers.remove(i);
     }
     return numbers;
 }
