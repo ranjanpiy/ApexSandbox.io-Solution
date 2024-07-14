@@ -2,6 +2,6 @@ public List<Integer> evenNumbers(Integer n) {
     List<Integer> evenNumbersList = new List<Integer>();
     for (Integer i =1; i<=n;i++)
     //Integer even= 2*1;
-        evenNumbersList.add(even);
+        evenNumbersList.add(i*2);
     return evenNumbersList;
 }
