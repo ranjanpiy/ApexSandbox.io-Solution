@@ -6,9 +6,9 @@ public List<Integer> fibonacciSeries(Integer n) {
     numberList.add(sum);}
     else
     {
-        for( Integer i=0;i<n;i++)
+        for( Integer i=1;i<n;i++)
         {
-            sum =i+sum;
+            sum =i;
             numberList.add(sum);
         }
     }
