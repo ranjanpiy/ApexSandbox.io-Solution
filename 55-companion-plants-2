@@ -1,7 +1,7 @@
 public Boolean companionPlants(List<String> plants) {
     Boolean result;
     Integer size = plants.size();
-    if(plants.size() > 1)
+    if(plants.size() > 0)
     { for(Integer i=0;i< size -1;i++)
         {  List<String> plants2 = new List<String>{plants[i],plants[i+1]};
             plants2.sort();
