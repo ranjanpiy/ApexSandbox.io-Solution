@@ -1,11 +1,11 @@
 public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> numberList = new List<Integer>();
-    Integer n1=0,n2=1,fN;
+    Integer n1=1,n2=1,fN=1;
     if( n ==1 )
     numberList = {1};
     else if(n ==2)
      numberList = {1,1};
-     else
+    else
     {
         for( Integer i=1;i<=n;i++)
         {
