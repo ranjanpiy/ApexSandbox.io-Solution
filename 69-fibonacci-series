@@ -22,7 +22,7 @@ public List<Integer> fibonacciSeries(Integer n) {
 
     Integer prevFib = 0;
 
-    List<Integer> fibs = new List<Integer>{fib};
+    List<Integer> fibs = new List<Integer>();
 
     for(Integer i = 1 ; i < n ; i++) {
 
