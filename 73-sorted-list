@@ -1,23 +1,23 @@
 public boolean isSorted(List<Integer> numbers) {
-    boolean result; Integer size= numbers.size();
+    boolean result; Integer size = numbers.size();
     if(size <=1 || (numbers[0] == numbers[1]))
     result= true;
     else if( numbers[0] <= numbers[size-1])
     { for(Integer i=0;i<size-1;i++)
         {
             if(numbers[i]<= numbers[i+1] )
-            result =true;
+            result = true;
             else
-            {result =false; break;}
+            {result = false; break;}
         }
     }
     else if( numbers[0] >= numbers[size-1])
     { for(Integer j=0;j<size-1;j++)
         {
             if(numbers[j] >= numbers[j+1] )
-            result =true;
+            result = true;
             else
-            {result =false;break;}
+            {result = false;break;}
         }
     }
     return result;
