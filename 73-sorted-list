@@ -15,7 +15,7 @@ public boolean isSorted(List<Integer> numbers) {
         }
     }
     else if( numbers[0] >= numbers[size-1])
-    { for(Integer j=0;j<size-1;j++)
+    { for(Integer j=0;j<size;j++)
         {
             if( numbers[j] >= numbers[j+1] )
             result = true;
