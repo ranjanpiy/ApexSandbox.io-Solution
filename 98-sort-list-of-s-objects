@@ -1,6 +1,6 @@
 public List<Account> getAccounts(List<Account> accounts) {
     List<Account> orderAccounts = new List<Account>();
-    if(accounts == null)
+    if(accounts.size()<1)
     return orderAccounts;
 }
 // write extra class here 
