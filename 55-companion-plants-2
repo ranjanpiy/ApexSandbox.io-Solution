@@ -20,7 +20,9 @@ public Boolean companionPlants(List<String> plants) {
         }
 
     }
+    else if(size ==1)
+    result= false;
     else
-    result= true;
+    result = true;
     return result;
 }
