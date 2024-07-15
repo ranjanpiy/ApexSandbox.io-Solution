@@ -14,6 +14,8 @@ public Boolean companionPlants(List<String> plants) {
      (plants2[0] =='carrots' && plants2[1] =='onions' ) ||
      (plants2[1] =='tomatoes' && plants2[0] =='onions' ))
           {result = true;}
+          {result= false;
+            break;}
         }
 
     }
