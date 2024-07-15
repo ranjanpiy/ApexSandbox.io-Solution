@@ -1,5 +1,5 @@
 public List<String> fullNames(List<String> firstNames, List<String> lastNames) {
-    String nameFull = new String();
+    String nameFull;
     List<String> fullName = new List<String>();
     if(firstNames.size()!=null)
     { for(Integer i=0;i<firstNames.size();i++)
