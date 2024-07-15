@@ -1,7 +1,7 @@
 public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> numberList = new List<Integer>();
     Integer sum=0;
-    if( n ==1 || n == 2 )
+    if( n ==1 )
     { sum =1;
     numberList.add(sum);}
     else
