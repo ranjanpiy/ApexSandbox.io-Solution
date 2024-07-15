@@ -1,0 +1,16 @@
+public List<Integer> fibonacciSeries(Integer n) {
+    List<Integer> numberList = new<Integer>();
+    Integer sum=0;
+    if( n ==1 || n==2 )
+    { sum =1;
+    numberList.add(sum);}
+    else
+    {
+        for( Integer i=1;i<=n;i++)
+        {
+            sum +=i;
+            numberList.add(sum);
+        }
+    }
+    return numberList;
+}
