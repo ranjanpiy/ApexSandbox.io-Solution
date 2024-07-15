@@ -6,7 +6,7 @@ public boolean isSorted(List<Integer> numbers) {
     { for(Integer i=0;i<size;i++)
         {
             if(numbers[i]<= numbers[i+1] )
-            result =true;
+           { result =true;}
             else
             {result =false; break:}
         }
@@ -15,7 +15,7 @@ public boolean isSorted(List<Integer> numbers) {
     { for(Integer i=0;i<size;i++)
         {
             if(numbers[i] => numbers[i+1] )
-            result =true;
+            {result =true;}
             else
             {result =false; break:}
         }
