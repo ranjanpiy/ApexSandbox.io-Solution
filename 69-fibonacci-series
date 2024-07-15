@@ -2,12 +2,14 @@ public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> numberList = new List<Integer>();
     Integer n1=1,n2=1,fN=1;
     if( n ==1 )
-    numberList = {1};
+    numberList.add(n1);
     else if(n ==2)
-     numberList = {1,1};
+     {numberList.add(n1);
+      numberList.add(n2);}
     else
-    {
-        for( Integer i=1;i<=n;i++)
+    {   numberList.add(n1);
+        numberList.add(n2);
+        for( Integer i=3;i<=n;i++)
         {
             fN = n1+n2;
             n1=n2;
