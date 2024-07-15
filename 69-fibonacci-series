@@ -6,7 +6,7 @@ public List<Integer> fibonacciSeries(Integer n) {
         numberList.add(fN);}
     else
     {
-        for( Integer i=1;i<=n;i++)
+        for( Integer i=2;i<=n;i++)
         {
             fN = n1+n2;
             n1=n2;
