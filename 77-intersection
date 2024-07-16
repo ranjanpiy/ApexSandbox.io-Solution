@@ -5,7 +5,7 @@ public Set<Integer> setIntersection(Set<Integer> set1, Set<Integer> set2) {
 
     for(Integer i=0;i<list1.size();i++)
     {
-        for(Integerj=0;j<list2.size();j++)
+        for(Integer j=0;j<list2.size();j++)
         {
             if(list1[i] == list2[j])
             inter.add(list1[i]);
