@@ -1,5 +1,5 @@
 public Map<String, Decimal> industrySummary(List<Account> accounts) {
-    Map<String, Decimal> sumIndustry = new Map<String, Decimal> ();
+    Map<String, Decimal> sumIndustry = new Map<String, Decimal>();
     Decimal totalAnnualRevenue;
     for( Account a : accounts)
     {   
@@ -11,5 +11,5 @@ public Map<String, Decimal> industrySummary(List<Account> accounts) {
         else
         sumIndustry.put(a.Industry,a.AnnualRevenue);
     }
-    return sumIndustry
+    return sumIndustry;
 }
