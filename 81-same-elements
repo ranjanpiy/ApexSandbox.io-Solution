@@ -5,9 +5,9 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
    /* if(setNums1.isEmpty() == true && setNums2.isEmpty() == true)
     result = true;
     else if(setNums2.equals(setNums1))
-    result = true;
+    result = true;  //My approach
     else
     result=false;*/
-    result = setNums2.equals(setNums1);
+    result = setNums2.equals(setNums1); //most optimized approach
     return result;
 }
