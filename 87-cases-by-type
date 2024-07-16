@@ -8,7 +8,7 @@ public Map<String, List<Case>> casesByType(List<Case> cases) {
             cureentCases.add(c);
             caseAssign.put(c.Type,cureentCases);
         }
-        else
+        else if(c.Type !=null)
          caseAssign.put(c.Type, new List<Case> {c});
     }
     return caseAssign;
