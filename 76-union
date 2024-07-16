@@ -1,5 +1,5 @@
 public Set<Integer> setUnion(Set<Integer> set1, Set<Integer> set2) {
-    Set<Integer> all = new Set<Integer>();
+    Set<Integer> all = new Set<Integer>(); //Set<Integer> all = new Set<Integer>(set1); // we define new set with elemst of set1 and then add set2
     all.addAll(set1);
     all.addAll(set2);
     return all;
