@@ -2,20 +2,9 @@ public Boolean sameElements(List<Integer> nums1, List<Integer> nums2) {
     Boolean result;
     Set<Integer> setNums1 = new Set<Integer>(nums1);
     Set<Integer> setNums2 = new Set<Integer>(nums2);
-    if(setNums1 == null && setNums2 == null)
+    if(setNums1.isEmpty() == true && setNums2.isEmpty() == true)
     result = true;
     else if(setNums1.size() == setNums2.size())
-    { for(Integer n: nums1)
-    {
-        if(nums2.contains(n))
-        result = true;
-        else
-        {result= false;
-        break;}
-    }
-    
-    }
-    else 
-    result= false;
+    result = nums2.containsAll(nums1);
     return result;
 }
